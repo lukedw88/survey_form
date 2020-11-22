@@ -1,1 +1,79 @@
-<h1 id="title">Crypto or Colleges</h1>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: helvetica;
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      label {
+        font-size: 20px;
+        display: block;
+        padding-bottom: 10px;
+        }
+        input {
+          display: block;
+        }
+        form {
+          background-color: #d3d3d3;
+          padding: 35px 35px 35px 35px;
+        }
+    </style>
+
+  </head>
+
+  <body>
+<h1 id="title">College Choice</h1>
+    <p id="description">
+    This is a survey about choosing the College that's right for you
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+          <input type="text" name="name" id="name" required placeholder="Surname"></input><br>
+      <label id="email-label">Email:</label>
+          <input type="email" name="email" id="email" required placeholder="Primary Email"></input><br>
+      <label id="number-label">Number:</label>
+          <input type="number" name="number" id="number" min="0" max="10" required placeholder="#"></input><br>
+
+      <label id="choice">College Choice:</label>
+      <select id="dropdown" name="collges">
+        <option value="baylor">Baylor</option>
+        <option value="utaustin">UT Austin</option>
+        <option value="unt">UNT</option>
+        <option value="uofh">U of H</option>
+      </select>
+      <br>
+      <label for="private-public">Choose a College or University:</label>
+        <select name="private-public" id="private-public">
+          <optgroup label="Public">
+            <option value="unt">University of North Texas</option>
+            <option value="uofh">University of Houston</option>
+          </optgroup>
+          <optgroup label="Private">
+            <option value="baylor">Baylor University</option>
+            <option value="rice">Rice University</option>
+          </optgroup>
+        </select>
+
+      <br>
+      <input type="radio" class="radio-inline" name="gender" value="male">Male<br>
+      <input type="radio" class="radio-inline" name="gender" value="female">Female<br>
+      <input type="radio" class="radio-inline" name="gender" value="other">Other<br>
+      <br>
+
+      <input type="checkbox" name="test1" value="SAT">Yes, I have my SAT<br>
+      <input type="checkbox" name="test2" value="PSAT">Yes, I have my PSAT<br>
+      <input type="checkbox" name="test3" value="ACT">Yes, I have my ACT<br>
+
+      <br><textarea placeholder="Additional info"></textarea>
+
+    <input type="submit" id="submit">
+    </form>
+
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+  </body>
+</html>
